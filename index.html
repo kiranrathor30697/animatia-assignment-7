@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Overlays Animatia Assignment</title>
+        <style>
+            .k_common{
+                width: 243px;
+                height: 183px; 
+                position:relative;   
+            }
+            .k1_common{
+                transition:all 1s ease-in-out;
+                box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.2);
+            }
+            .k2_common{
+                display: inline-block;
+                background-color: #fff;
+                background-image:url(img/1.jpg);
+                background-size:cover;  
+                background-repeat: no-repeat;
+                overflow:hidden;
+                margin: 15px;
+                float: left;
+            }
+            .k{
+                background-color: rgba(0,0,0,0.2);
+            }
+            .k_overlay1{    
+                top: -183px;
+                left:0px;   
+            }
+            .k_box1:hover .k_overlay1{
+                top:0px;
+                left:0px;
+            }
+            .k_overlay2{
+                bottom:-183px;
+                left:0px;
+            }
+            .k_box2:hover .k_overlay2{  
+                bottom:0px;
+                left:0px;   
+            }
+            .k_overlay3{
+                top:0px;
+                right:243px;
+            }
+            .k_box3:hover .k_overlay3{
+                top:0px;
+                right:0px;               
+            }
+            .k_overlay4{
+                top:0px;
+                left:243px;
+            }
+            .k_box4:hover .k_overlay4{
+                top:0px;
+                left:0px;               
+            }
+        </style>
+    </head>
+    <body>
+        <div class="k_common k2_common k_box1">
+            <div class="k_common k1_common k_overlay1 k"></div>
+        </div>
+        <div class="k_common k2_common k_box2">
+            <div class="k_common k1_common k_overlay2 k"></div>
+        </div> 
+        <div class="k_common k2_common k_box3">
+            <div class="k_common k1_common k_overlay3 k"></div>
+        </div>
+        <div class="k_common k2_common k_box4">
+            <div class="k_common k1_common k_overlay4 k"></div>
+        </div>   
+           
+    </body>
+</html>
