@@ -12,7 +12,7 @@
                 position:relative;   
             }
             .k1_common{
-                transition:all 0.3s ease-in-out;
+                transition:all 0.4s linear;
                 box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.2);
             }
             .k2_common{
@@ -27,6 +27,8 @@
             }
             .k{
                 background-color: rgba(0,0,0,0.2);
+                position: absolute;
+                
             }
             .k_overlay1{    
                 top: -183px;
@@ -60,6 +62,66 @@
                 top:0px;
                 left:0px;               
             }
+            .k_overlay5{
+                top:-183px;
+                right:0px;
+            }
+            .k_box5:hover .k_overlay5{
+                top:0px;
+            }
+            .k_overlay6{
+                bottom:-183px;
+                left:0px;
+            }
+            .k_box5:hover .k_overlay6{
+                bottom:0px;
+            }
+            .k_overlay7{
+                top:0px;
+                right:243px;
+            }
+            .k_box6:hover .k_overlay7{
+                right:0px;
+            }
+            .k_overlay8{
+                bottom:0px;
+                left:243px;
+            }
+            .k_box6:hover .k_overlay8{
+                left:0px;
+            }
+            .k_overlay9{
+                top:-183px;
+                right:243px;
+            }
+            .k_box7:hover .k_overlay9{
+                top:0px;
+                right:0px;
+            }
+            .k_overlay10{
+                bottom:-183px;
+                left:243px;
+            }
+            .k_box7:hover .k_overlay10{
+                bottom:0px;
+                left:0px;
+            }
+            .k_overlay11{
+                top:183px;
+                right:243px;
+            }
+            .k_box8:hover .k_overlay11{
+                top:0px;
+                right:0px;
+            }
+            .k_overlay12{
+                bottom:183px;
+                left:243px;
+            }
+            .k_box8:hover .k_overlay12{
+                bottom:0px;
+                left:0px;
+            }
         </style>
     </head>
     <body>
@@ -74,6 +136,22 @@
         </div>
         <div class="k_common k2_common k_box4">
             <div class="k_common k1_common k_overlay4 k"></div>
+        </div>
+        <div class="k_common k2_common k_box5">
+            <div class="k_common k1_common k_overlay5 k"></div>
+            <div class="k_common k1_common k_overlay6 k"></div>
+        </div>
+        <div class="k_common k2_common k_box6">
+            <div class="k_common k1_common k_overlay7 k"></div>
+            <div class="k_common k1_common k_overlay8 k"></div>
+        </div> 
+        <div class="k_common k2_common k_box7">
+            <div class="k_common k1_common k_overlay9 k"></div>
+            <div class="k_common k1_common k_overlay10 k"></div>
+        </div>
+        <div class="k_common k2_common k_box8">
+            <div class="k_common k1_common k_overlay11 k"></div>
+            <div class="k_common k1_common k_overlay12 k"></div>
         </div>   
            
     </body>
