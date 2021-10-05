@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Overlay Assignment 7</title>
+        <style>
+            .k_common{
+                width: 243px;
+                height: 183px;
+                position: relative;
+            }
+            .k2_common{
+                background-image: url(img/1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                float: left;
+                margin: 5px;
+            }
+            .k1_common{
+                position: absolute;
+                transition: all 0.1s linear 0.2s;
+            }
+            .k_overlay17{
+                top:183px;
+                left:0px;
+            }
+            .k_box13:hover .k_overlay17{
+                background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.4),rgba(0,0,0,0.2));
+                top:0px;
+            }
+            .k_overlay18{
+                bottom:183px;
+                left: 0px;
+            }
+            .k_box14:hover .k_overlay18{
+                background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.2));
+                bottom:0px;
+            }
+            .k_overlay19{
+                top: 0px;
+                left: 243px;
+            }
+            .k_box15:hover .k_overlay19{
+                background-image:-webkit-linear-gradient(left,rgba(0,0,0,0.4),rgba(0,0,0,0.2));
+                left:0px;
+            }
+            .k_overlay20{
+                top:0px;
+                right:243px;
+            }
+            .k_box16:hover .k_overlay20{
+                background-image:-webkit-linear-gradient(right,rgba(0,0,0,0.4),rgba(0,0,0,0.2));
+                right:0px;
+            }
+            .k_anchor{
+                display:inline-block;
+                position: absolute;
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background-color: #fff;
+                border-radius: 40px;
+                top: 75px;
+                left: 70px;
+                color: gray;
+                transition-property: all;
+                transition: timinig function linear;
+                transition-duration: 1s;
+                transition:all 0.2s linear 0.1s;
+                z-index: 100000;
+                opacity: 0;   
+            }
+            .k1{
+                left: 125px;
+            }
+            .k2_common:hover .k_anchor{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="k_common k2_common k_box13">
+            <a href="#" class="k_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="k_anchor k1"><i class="fas fa-search"></i></a>
+            <div class="k_common k1_common k_overlay17"></div>
+        </div>
+        <div class="k_common k2_common k_box14">
+            <a href="#" class="k_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="k_anchor k1"><i class="fas fa-search"></i></a>
+            <div class="k_common k1_common k_overlay18"></div>
+        </div>
+        <div class="k_common k2_common k_box15">
+            <a href="#" class="k_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="k_anchor k1"><i class="fas fa-search"></i></a>
+            <div class="k_common k1_common k_overlay19"></div>
+        </div>
+        <div class="k_common k2_common k_box16">
+            <a href="#" class="k_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="k_anchor k1"><i class="fas fa-search"></i></a>
+            <div class="k_common k1_common k_overlay20"></div>
+        </div>
+    </body>
+</html>
